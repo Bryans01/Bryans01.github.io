@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #35424a;
+    color: white;
+    padding: 1rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header h1 {
+    display: inline;
+}
+
+footer {
+    background: #35424a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+.post-title {
+    font-size: 1.5rem;
+}
+
+.post-cover {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.post-content {
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 1rem 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}

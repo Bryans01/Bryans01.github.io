@@ -1,22 +1,21 @@
-<!DOCTYPE html>
 <html>
- <head>
-  <title>
-   Bryan's Tech Blog
-  </title>
- </head>
  <body>
-  <a href="content\1.html">
-   1
-  </a>
-  <a href="content\2.html">
-   2
-  </a>
-  <a href="content\3.html">
-   3
-  </a>
-  <a href="content\4.html">
-   4
-  </a>
+  <p>
+   {% extends "base_template.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  </p>
+  <h2>
+   Latest Posts
+  </h2>
+  <ul id="post-list">
+   <!-- Blog links will be added here -->
+   <li href="content\2.html">
+    2
+   </li>
+  </ul>
+  {% endblock %}
  </body>
 </html>
