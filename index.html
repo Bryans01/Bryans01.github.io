@@ -2,62 +2,18 @@
 <html>
  <head>
   <title>
-   {{ blog_name }}
+   From the Ghost in the Machine
   </title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Roboto&amp;display=swap" rel="stylesheet"/>
-  <link href="styles.css" rel="stylesheet"/>
  </head>
  <body>
-  <header>
-   <div class="container">
-    <a class="logo" href="/">
-     {{ blog_name }}
-    </a>
-    <nav>
-     <a href="/">
-      Home
-     </a>
-     <a href="/about">
-      About
-     </a>
-     <a href="/contact">
-      Contact
-     </a>
-    </nav>
-   </div>
-  </header>
-  <div class="container">
-   <h1>
-    Latest Posts
-   </h1>
-   <div class="latest-posts">
-    {% for post in posts %}
-    <div class="latest-post">
-     <a href="{{ post.url }}">
-      <img alt="{{ post.title }}" class="latest-post-image" src="{{ post.cover_image }}"/>
-     </a>
-     <div class="latest-post-info">
-      <a href="{{ post.url }}">
-       <h2>
-        {{ post.title }}
-       </h2>
-      </a>
-      <a href="content\3.html">
-       3
-      </a>
-      <p class="latest-post-date">
-       {{ post.date.strftime('%B %d, %Y') }}
-      </p>
-     </div>
-    </div>
-    {% endfor %}
-   </div>
-  </div>
-  <footer>
-   <div class="container">
-    &copy; {{ blog_name }} {{ current_year }}. All rights reserved.
-   </div>
-  </footer>
+  <h1>
+   Short Stories from the Ghost in the Machine
+  </h1>
+  <h2>
+   Latest Stories
+  </h2>
+  <a href="content\1.html">
+   1
+  </a>
  </body>
 </html>
