@@ -1,11 +1,29 @@
-$(document).ready(function() {
-    let liked = false;
-    let likeCount = 0;
+$(document).ready(function () {
+    const likeButton = $(".like-button");
+    const likeCount = $(".like-count");
+    const pageId = window.location.pathname;
 
-    $(".like-button").click(function() {
-        liked = !liked;
-        likeCount = liked ? likeCount + 1 : likeCount - 1;
-        $(this).text(liked ? "Liked" : "Like");
-        $(".like-count").text(likeCount);
+    function getLikes() {
+        const likes = JSON.parse(localStorage.getItem("likes")) || {};
+        return likes[pageId] || 0;
+    }
+
+    function setLikes(count) {
+        const likes = JSON.parse(localStorage.getItem("likes")) || {};
+        likes[pageId] = count;
+        localStorage.setItem("likes", JSON.stringify(likes));
+    }
+
+    function updateLikeDisplay() {
+        likeCount.text(getLikes());
+    }
+
+    likeButton.on("click", function () {
+        const newCount = getLikes() + 1;
+        setLikes(newCount);
+        updateLikeDisplay();
     });
+
+    updateLikeDisplay();
 });
+
