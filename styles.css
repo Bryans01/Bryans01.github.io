@@ -1,97 +1,72 @@
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-  background: #35424a;
-  color: white;
-  padding: 1rem;
+  background-color: #f4f4f4;
+  border-bottom: 2px solid #333;
+  padding: 1rem 0;
   text-align: center;
 }
 
-header a {
-  color: white;
+h1 {
+  margin: 0;
+}
+
+a {
+  color: #333;
   text-decoration: none;
 }
 
-header h1 {
-  display: inline;
+a:hover {
+  text-decoration: underline;
 }
 
 main {
-  background-color: white;
-  width: 80%;
+  max-width: 700px;
   margin: 2rem auto;
-  padding: 1.5rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  padding: 0 2rem;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  display: block;
 }
 
 .content {
-  text-align: justify;
+  margin-top: 2rem;
 }
 
-.like-section {
-  margin-top: 1rem;
-  display: flex;
-  align-items: center;
-}
-
-.like-button {
-  background-color: #ff4136;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.like-count {
-  margin-left: 1rem;
-  font-size: 1rem;
-}
-
-/* Add these styles to your existing styles.css file */
-
+/* Index styles */
 #index-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
 }
 
 .index-post {
-  width: 80%;
-  background-color: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  background-color: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 1rem;
   text-align: center;
+  transition: background-color 0.3s;
 }
 
-.index-post a {
-  color: #e8491d;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
+.index-post:hover {
+  background-color: #e8e8e8;
 }
 
-.index-post a:hover {
-  color: #35424a;
-}
+@media screen and (max-width: 768px) {
+  header {
+      text-align: left;
+      padding-left: 1rem;
+  }
 
-.index-like-count {
-  margin-left: 10px;
-  font-size: 14px;
-  color: #888;
+  main {
+      padding: 0 1rem;
+  }
 }
