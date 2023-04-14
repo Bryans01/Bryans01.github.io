@@ -89,3 +89,9 @@ img {
 .index-post a:hover {
   color: #35424a;
 }
+
+.index-like-count {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #888;
+}
