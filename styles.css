@@ -1,12 +1,14 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background-color: #f3f3f3;
 }
 
 header {
   background: #35424a;
   color: white;
   padding: 1rem;
+  text-align: center;
 }
 
 header a {
@@ -18,42 +20,42 @@ header h1 {
   display: inline;
 }
 
-footer {
-  background: #35424a;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 1rem;
-}
-
 main {
-  padding: 1rem;
+  background-color: white;
+  width: 80%;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
-.post-title {
-  font-size: 1.5rem;
-}
-
-.post-cover {
+img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.post-content {
+.content {
   text-align: justify;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.like-section {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
 }
 
-ul li {
-  margin: 1rem 0;
+.like-button {
+  background-color: #ff4136;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-ul li a {
-  text-decoration: none;
-  color: #333;
+.like-count {
+  margin-left: 1rem;
+  font-size: 1rem;
 }
