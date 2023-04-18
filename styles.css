@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: #5c6bc0;
   color: #f3f3f3;
   border-bottom: 2px solid #444;
   padding: 1rem 0;
@@ -64,6 +64,8 @@ img {
   text-align: center;
   transition: background-color 0.3s;
   border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .index-post:hover {
@@ -72,14 +74,28 @@ img {
 
 .blog-title-date {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
 }
 
 .date {
   color: #999;
-  margin-left: 1rem;
+  margin-right: 0.5rem;
+}
+
+.return-to-index {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #ef5350;
+  color: #f3f3f3;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.return-to-index:hover {
+  background-color: #e53935;
 }
 
 @media screen and (max-width: 768px) {
