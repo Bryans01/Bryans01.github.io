@@ -92,6 +92,9 @@ img {
   color: #f3f3f3;
   border-radius: 5px;
   text-decoration: none;
+  font-weight: bold; /* Add this line */
+}
+
 }
 
 .return-to-index:hover {
