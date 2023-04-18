@@ -4,13 +4,15 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  background-color: #f2f2f2; /* Add a light background color */
 }
 
 header {
-  background-color: #f4f4f4;
+  background-color: #3c9dde; /* Change the header color to blue */
   border-bottom: 2px solid #333;
   padding: 1rem 0;
   text-align: center;
+  color: #fff; /* Change the header text color to white */
 }
 
 h1 {
@@ -30,6 +32,9 @@ main {
   max-width: 700px;
   margin: 2rem auto;
   padding: 0 2rem;
+  background-color: #fff; /* Add a white background color for the main content area */
+  border: 1px solid #ccc; /* Add a light border around the main content area */
+  border-radius: 8px; /* Add rounded corners */
 }
 
 img {
@@ -67,6 +72,4 @@ img {
   }
 
   main {
-      padding: 0 1rem;
-  }
-}
+     
