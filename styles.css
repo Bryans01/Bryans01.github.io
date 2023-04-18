@@ -58,7 +58,7 @@ img {
 }
 
 .index-post {
-  background-color: #f4f4f4;
+  background-color: #f3f3f3; /* Match the body background-color */
   border: 1px solid #ccc;
   padding: 1rem;
   text-align: center;
@@ -67,6 +67,7 @@ img {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 
 .index-post:hover {
   background-color: #e8e8e8;
