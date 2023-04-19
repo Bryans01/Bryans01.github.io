@@ -33,10 +33,11 @@ main {
   max-width: 700px;
   margin: 2rem auto;
   padding: 0 2rem;
-  background-color: #fff;
+  background-color: #f3f3f3; /* Change this line to match the body background color */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
+
 
 img {
   max-width: 70%;
